@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Only HTML</title>
+	<style>
+		body {
+			text-align: center;
+			font-size: 14px;
+			font-family: arial;
+		}
+
+		h1 {
+			color: #e74c3c;
+		}
+
+		h3 {
+			color: #2980b9;
+		}
+
+		#msg {
+			padding-top: 20px;
+			display: none;
+			color: #8e44ad;
+			font-size: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1>HiTalk - Saysua-frontend-101 course</h1>
+	<p>I want to bring the joy of learning frontend to you</p>
+	<h3>Hope that everything is fine :D </h3>
+	<button id="button">Oh yeah!</button>
+	<div id="msg">
+		Oh ze Oh ze Oh ze`
+	</div>
+	<div>
+		<a href="index.html">View me with out CSS + Javascript</a>
+	</div>
+	<script>
+		var btn = document.getElementById('button');
+		btn.addEventListener('click', function() {
+			document.getElementById('msg').style.display = 'block';
+		});
+	</script>
+</body>
+</html>
