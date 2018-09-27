@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo-class</title>
+</head>
+	<style>
+		header ul {
+			list-style: none;
+		}
+
+		a:link, a:visited {
+			color: white;
+			background: blue;
+			text-decoration: none;
+			width: 200px;
+			display: block;
+			margin-bottom: 5px;
+			text-align: center;
+			border: 1px solid red;
+		}
+
+		a:hover, a:active {
+			background: red;
+		}
+
+		header li:nth-child(3) {
+			font-size: 20px;
+		}
+
+		section div:nth-child(odd) {
+			background: gray;
+		}
+
+		section div:nth-child(3):hover {
+			background: blue;
+			color: white;
+			cursor: pointer;
+		}
+	</style>
+<body>
+	
+	<header>
+		<h1>Pseudo-class</h1>
+		<ul>
+			<li><a href="http://google.com">Google</a></li>
+			<li><a href="http://facebook.com">Facebook</a></li>
+			<li><a href="https://www.facebook.com/groups/319694642137155/permalink/321237465316206/">Hitalk Frontend Group</a></li>
+		</ul>
+	</header>
+
+	<section>
+		<div>Div 1</div>
+		<div>Div 2</div>
+		<div>Div 3</div>
+		<div>Div 4</div>
+		<div>Div 5</div>
+		<div>Div 6</div>
+		<div>Div 7</div>
+		<div>Div 8</div>
+		<div>Div 9</div>
+		<div>Div 10</div>
+	</section>
+</body>
+</html>
