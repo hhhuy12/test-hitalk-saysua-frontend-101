@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box model</title>
+	<style>
+		h1 {
+			background: green;
+			margin: 0;
+		}
+
+		#box {
+			background: #3498db;
+			color: white;
+			padding: 10px 20px 30px 40px;
+			border: 5px solid red;
+			margin: 40px;
+			width: 400px;
+			box-sizing: border-box;
+		}
+
+		#content {
+			background: #e67e22;
+		}
+	</style>
+</head>
+<body>
+	<h1>Box model</h1>
+	<div id="box">
+		<div id="content">Use Chrome dev tool to see the box</div>
+	</div>
+</body>
+</html>
