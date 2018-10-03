@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Width and Height</title>
+	<style>
+		body {
+			background: #1abc9c;
+		}
+		section {
+			padding: 10px;
+			margin: 10px;
+			border: 1px solid #fff;
+		}
+
+		section * {
+			background: #fff;
+			margin: 5px;
+		}
+
+		/************** Demo css here **********/
+		#inline * {
+			width: 200px;
+			height: 100px;
+			display: inline-block;
+		}
+
+		#block * {
+			width: 200px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+
+	<section id="inline">
+		<a> A tag</a>
+		<span>Span tag</span>
+		<em>Em tag</em>
+		<b>B tag</b>
+	</section>
+
+	<section id="block">
+		<div>Div tag</div>
+		<nav>Nav tag</nav>
+		<aside>Aside tag</aside>
+	</section>
+</body>
+</html>
