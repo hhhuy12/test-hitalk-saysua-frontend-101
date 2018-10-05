@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7f8c8d;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.width-50 {
+  width: 50%;
+  float: left;
+}
+
+i {
+  color: #2ecc71;
+}
+
+h1, h2 {
+  color: #2c3e50;
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #7f8c8d;
+}
+
+a:hover {
+  color: #27ae60;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.button {
+  border: 1px solid #95a5a6;
+  background: #ffffff;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #2c3e50;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 20px;
+  transition: all 1s;
+}
+
+.button:hover {
+  color: #2c3e50;
+  background: #ecf0f1;
+}
+
+/* HEADER */
+header {
+  background: #8e44ad;
+  color: #ffffff;
+  padding: 100px 0 50px 0;
+}
+
+#welcome {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding-right: 30px;
+}
+
+#welcome-2 {
+  padding-left: 30px;
+  border-left: 1px solid rgba(144, 144, 144, 0.25);;
+  color: #ecf0f1;
+}
+
+/* CONTENT - 1 */
+#content-1 {
+  border-bottom: 1px solid #bdc3c7;
+}
+
+#content-1 > .container > div:nth-child(1) {
+  padding-right: 30px;
+}
+
+#content-1 > .container > div:nth-child(2) {
+  padding-left: 30px;
+  border-left: 1px solid rgba(144, 144, 144, 0.25);
+}
+
+header .button {
+  background: #2ecc71;
+  color: #ffffff;
+}
+
+/* CONTENT 2 */
+.post {
+  padding-top: 40px;
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.post-image {
+  width: 20%; 
+  float: left;
+}
+
+.post-image img {
+  width: 100%;
+  vertical-align: top;  /* display: block; https://stackoverflow.com/questions/10612380/get-rid-of-space-underneath-inline-block-image */;
+}
+.post-content {
+  width: 80%;
+  float: left;
+  padding: 30px 0 0 20px;
+}
+
+.post-content p {
+  margin-bottom: 20px;
+}
+
+/* CONTENT 3 */
+#content-3 {
+  text-align: center;
+}
+
+/* CONTACT */
+#contact > .container > div:nth-child(1) {
+  padding-right: 30px;
+  border-right: 1px solid rgba(144, 144, 144, 0.25);
+}
+
+#contact > .container > div:nth-child(2) {
+  padding-left: 30px;
+}
+
+#contact input {
+  margin-top: 30px;
+  width: 90%;
+  border: 1px solid #bdc3c7;
+  padding: 10px;
+}
+
+#contact textarea {
+  margin-top: 30px;
+  width: 100%;
+  border: 1px solid #bdc3c7;
+  padding: 10px;
+  height: 100px;
+}
+
+#email-input-wrapper {
+  text-align: right;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  border-top: 1px solid #bdc3c7;
+  padding: 50px;
+}

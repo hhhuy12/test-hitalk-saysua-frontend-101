@@ -2,15 +2,37 @@
 <html>
 <head>
 	<title>Length Unit</title>
+	<style>
+		body {
+			font-size: 20px;
+		}
+
+		/* em */
+		/* rem => root em*/  
+
+		/* % */
+		#bar {
+			background: green;
+			height: 20px;
+			width: 50%;
+		}
+
+		#child {
+			background: yellow;
+			height: 20px;
+			width: 50%;
+		}
+	</style>
 </head>
 <body>
-	<div>Normal Text</div>
-	<div>
-		Text 1
-		<div>
-			Text 2
-			<div> Text 3</div>
-		</div>
+	<div style="font-size: 2rem;">
+		Normal Text
+		<div style="font-size: 2rem;">another text</div>
+	</div>
+
+
+	<div id="bar">
+		<div id="child"></div>
 	</div>
 </body>
 </html>
