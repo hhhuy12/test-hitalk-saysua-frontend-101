@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hovering menu</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: arial;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.sub-menu {
+			display: none;
+			position: absolute;
+			left: 200px;
+			top: 0;
+		}
+
+		.menu-item {
+			padding: 10px;
+			width: 200px;
+			background: #2980b9;
+			border-bottom: 1px solid #ecf0f1;
+			color: #fff;
+			cursor: pointer;
+
+			position: relative;
+		}
+
+		.menu-item:hover {
+			background: #27ae60;
+		}
+		
+		.menu-item:hover .sub-menu {
+			display: block;
+			
+		}
+
+		.sub-menu .menu-item {
+			border-left: 1px solid #ecf0f1;;
+		}
+	</style>
+</head>
+<body>
+
+	<ul id="menu">
+		<li class="menu-item">Home
+			<ul class="sub-menu">
+				<li class="menu-item">Home 1</li>
+				<li class="menu-item">Home 2</li>
+				<li class="menu-item">Home 3</li>
+				<li class="menu-item">Home 4</li>
+			</ul>
+		</li>
+		<li class="menu-item">
+			Category
+			<ul class="sub-menu">
+				<li class="menu-item">Category 1</li>
+				<li class="menu-item">Category 2</li>
+				<li class="menu-item">Category 3</li>
+				<li class="menu-item">Category 4</li>
+			</ul>
+		</li>
+		<li class="menu-item">Contact</li>
+		<li class="menu-item">About Us</li>
+	</ul>
+</body>
+</html>
